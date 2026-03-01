@@ -52,12 +52,12 @@ class DashboardProjectController extends Controller
             'title' => 'required|max:100',
             'slug' => 'required|unique:projects',
             'categories_id' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg|max:1024|dimensions:max_width=700,max_height=360,min_width=360,min_height=360',
+            'image' => 'image|mimes:jpeg,png,jpg|max:2048|dimensions:min_height=600',
             'body' => 'required'
         ]);
 
         if ($request->file('image')) {
-            $validatedData['image'] = $request->file('image')->store('project-images');
+            $validatedData['image'] = $request->file('image')->store('project-images', 'public');
         }
         $validatedData['user_id'] = auth()->user()->id;
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 190);
@@ -107,7 +107,7 @@ class DashboardProjectController extends Controller
         $rules = [
             'title' => 'required|max:100',
             'categories_id' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg|max:1024|dimensions:max_width=700,max_height=360,min_width=360,min_height=360',
+            'image' => 'image|mimes:jpeg,png,jpg|max:2048|dimensions:min_height=600',
             'body' => 'required'
         ];
 
@@ -119,9 +119,9 @@ class DashboardProjectController extends Controller
 
         if ($request->file('image')) {
             if ($request->oldImage) {
-                Storage::delete($request->oldImage);
+                Storage::disk('public')->delete($request->oldImage);
             }
-            $validatedData['image'] = $request->file('image')->store('project-images');
+            $validatedData['image'] = $request->file('image')->store('project-images', 'public');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
@@ -141,7 +141,7 @@ class DashboardProjectController extends Controller
     public function destroy(Projects $project)
     {
         if ($project->image) {
-            Storage::delete($project->image);
+            Storage::disk('public')->delete($project->image);
         }
         Projects::destroy($project->id);
         return redirect('/dashboard/project')->with('success', 'Project has been deleted!');

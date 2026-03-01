@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Irfan Bakhtiar</title>
+    <title>Tantan Taryana</title>
+    
+    {{-- Dark Mode Script - Must load before page renders --}}
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 
     {{-- ICON --}}
     <link rel="icon" href="{{ asset('img/favicon.png') }}?v=<?= date('YmdHis') ?>">
@@ -22,12 +31,30 @@
 
 </head>
 
-<body>
+<body class="bg-white dark:bg-slate-900 transition-colors duration-300">
     @include('layouts.nav')
     @yield('container')
 
     {{-- BASIC SCRIPT --}}
     <script src="{{ asset('js/script.js') }}?v=<?= date('YmdHis') ?>"></script>
+    
+    {{-- Dark Mode Toggle Script --}}
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                if (html.classList.contains('dark')) {
+                    html.classList.remove('dark');
+                    localStorage.theme = 'light';
+                } else {
+                    html.classList.add('dark');
+                    localStorage.theme = 'dark';
+                }
+            });
+        }
+    </script>
 
     {{-- AOS --}}
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

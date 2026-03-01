@@ -40,12 +40,12 @@
 <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto overflow-hidden text-center bg-white z-20 peer-focus:left-0 ease-out delay-150 duration-300 "
     id="aside">
     <div class="mt-4">
-        @if (\Auth::user()->image == true)
+        @if (!empty(Auth::user()->image))
             <img class="h-20 w-20 bg-gray-100 rounded-full hover:opacity-80 mx-auto"
-                src="{{ asset('storage/' . \Auth::user()->image) }}">
+                src="{{ asset('storage/' . Auth::user()->image) }}">
         @else
             <img class="h-20 w-20 bg-gray-100 rounded-full hover:opacity-80 mx-auto"
-                src="https://source.unsplash.com/85x85?man">
+                src="{{ asset('img/me.png') }}">
         @endif
     </div>
     <p class="text-sm text-center font-semibold text-primary mt-4 tracking-tight truncate">

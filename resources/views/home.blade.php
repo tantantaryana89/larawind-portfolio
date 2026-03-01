@@ -1,18 +1,18 @@
 @extends('layouts.main')
 @section('container')
     <!-- HERO SECTION START -->
-    <section id="about" class="pt-24 lg:pt-36 pb-40">
+    <section id="about" class="pt-24 lg:pt-36 pb-40 dark:bg-slate-900 transition-colors duration-300">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:px-16 lg:w-1/2">
-                    <h1 class="text-sm font-semibold text-primary md:text-base mb-4">Hello! I'm Irfan —
+                    <h1 class="text-sm font-semibold text-primary md:text-base mb-4">Hello! I'm Tantan —
                     </h1>
                     <div class="mb-4 lg:mb-6">
-                        <span class="font-bold text-dark text-3xl mb-2 lg:text-4xl tracking-tight block">I'm a Front End
+                        <span class="font-bold text-dark dark:text-white text-3xl mb-2 lg:text-4xl tracking-tight block transition-colors duration-300">Junior Front End
                             Developer</span>
                     </div>
                     <div class="grid grid-flow-col justify-start">
-                        <a href="mailto:example@gmail.com"
+                        <a href="mailto:tantantaryana89@gmail.com"
                             class="text-sm font-medium text-white bg-primary py-3 px-4 rounded-full inline-flex hover:bg-opacity-80 hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out">
                             <svg fill="none" stroke="currentColor" class="h-5 w-5 m-auto mr-2" stroke-width="1.5"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -24,22 +24,18 @@
                         </a>
                         <div class="col-span-4 my-auto">
                             <a href="#projects"
-                                class="text-sm font-medium text-dark py-3 px-4 underline underline-offset-2 hover:text-primary transition duration-300 ease-in-out"
+                                class="text-sm font-medium text-dark dark:text-gray-300 py-3 px-4 underline underline-offset-2 hover:text-primary transition duration-300 ease-in-out"
                                 alt="My Portfolio">See Portfolio
                             </a>
                         </div>
                     </div>
                     <div class="mt-8">
-                        <p class="text-base text-gray-600">I am an Informatics Engineering graduate from Politeknik
-                            Harapan
-                            Bersama. Always have motivation to learning and improve new skill. I look forward to
-                            providing
-                            real-world work experience in the field of developers and designers.</p>
+                        <p class="text-base text-gray-600 dark:text-gray-400 transition-colors duration-300">I graduated from Informatics Engineering from STMIK Kharisma which is now Horizon university. Always have the motivation to learn and improve new skills. I hope to provide real-world work experience in the field of developers and designers.</p>
                     </div>
                     <div class="mt-8">
                         <div class="flex items-center justify-left mt-6">
                             <!-- Linkedin -->
-                            <a href="https://linkedin.com/in/m-irfan-bakhtiar/"
+                            <a href="https://www.linkedin.com/in/tantan-taryana-86703a1b2/"
                                 class="inline-flex items-center justify-center w-10 h-10 mr-2 text-dark" target="_blank">
                                 <svg role="img" fill="#6b7280" class="h-5 w-5 hover:opacity-80" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +45,7 @@
                                 </svg>
                             </a>
                             <!-- Facebook -->
-                            <a href="https://facebook.com/m.irfan.bakhtiar"
+                            <a href="https://www.facebook.com/tanz.mania.5"
                                 class="inline-flex items-center justify-center w-10 h-10 mr-2 text-dark" target="_blank">
                                 <svg role="img" fill="#6b7280" class="h-5 w-5 hover:opacity-80" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +55,7 @@
                                 </svg>
                             </a>
                             <!-- Twitter -->
-                            <a href="https://twitter.com/fan23x"
+                            <a href="https://x.com/"
                                 class="inline-flex items-center justify-center w-10 h-10 mr-2 text-dark" target="_blank">
                                 <svg role="img" fill="#6b7280" class="h-5 w-5 hover:opacity-80" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +65,7 @@
                                 </svg>
                             </a>
                             <!-- Instagram -->
-                            <a href="https://instagram.com/m.irfanbakhtiar/"
+                            <a href="https://instagram.com/tantantaryana89/"
                                 class="inline-flex items-center justify-center w-10 h-10 mr-2 text-dark" target="_blank">
                                 <svg role="img" fill="#6b7280" class="h-5 w-5 hover:opacity-80" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +75,7 @@
                                 </svg>
                             </a>
                             <!-- Github -->
-                            <a href="https://github.com/irfanbakhtiar"
+                            <a href="https://github.com/tantantaryana89"
                                 class="inline-flex items-center justify-center w-10 h-10 mr-2 text-dark" target="_blank">
                                 <svg role="img" fill="#6b7280" class="h-5 w-5 hover:opacity-80" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -91,18 +87,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full self-center px-4 lg:px-16 lg:w-1/2 ">
+                <div class="w-full self-center px-4 lg:px-16 lg:w-1/2">
                     <div class="relative mt-24 lg:mt-0">
-                        <img src="{{ asset('img/me.png') }}" alt="Me" class="max-w-full mx-auto" />
-                        <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 lg:scale-125 -z-10">
-                            <svg width="350" height="350" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <img src="{{ asset('img/profileku.png') }}" alt="Me" class="relative w-64 sm:w-72 lg:w-80 h-auto object-contain rounded-2xl mx-auto drop-shadow-lg z-10"/>
+                        <span class="absolute -bottom-6 sm:-bottom-8 md:-bottom-10 left-1/2 -translate-x-1/2 w-[22rem] sm:w-96 md:w-[28rem] lg:w-[32rem] -z-10">
+                            <!-- Light mode blob -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto dark:hidden">
                                 <path
                                     d="M81.5,63Q71,76,56,82Q41,88,31.5,75.5Q22,63,23.5,50.5Q25,38,33.5,26.5Q42,15,56.5,19.5Q71,24,81.5,37Q92,50,81.5,63Z"
                                     stroke="none" fill="#0284c7"></path>
                                 <path
                                     d="M81.5,63Q71,76,56,82Q41,88,31.5,75.5Q22,63,23.5,50.5Q25,38,33.5,26.5Q42,15,56.5,19.5Q71,24,81.5,37Q92,50,81.5,63Z"
-                                    transform="translate(-7.83 -4.93)" stroke="#0369a1" stroke-width="1" fill="none">
-                                </path>
+                                    transform="translate(-7.83 -4.93)" stroke="#0369a1" stroke-width="1" fill="none"></path>
+                            </svg>
+                            <!-- Dark mode blob -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto hidden dark:block">
+                                <path
+                                    d="M81.5,63Q71,76,56,82Q41,88,31.5,75.5Q22,63,23.5,50.5Q25,38,33.5,26.5Q42,15,56.5,19.5Q71,24,81.5,37Q92,50,81.5,63Z"
+                                    stroke="none" fill="#0ea5e9"></path>
+                                <path
+                                    d="M81.5,63Q71,76,56,82Q41,88,31.5,75.5Q22,63,23.5,50.5Q25,38,33.5,26.5Q42,15,56.5,19.5Q71,24,81.5,37Q92,50,81.5,63Z"
+                                    transform="translate(-7.83 -4.93)" stroke="#38bdf8" stroke-width="1" fill="none"></path>
                             </svg>
                         </span>
                     </div>
@@ -110,19 +115,24 @@
             </div>
         </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 320" class="dark:hidden">
         <path fill="#f9fafb" fill-opacity="1"
+            d="M0,0L48,21.3C96,43,192,85,288,117.3C384,149,480,171,576,170.7C672,171,768,149,864,128C960,107,1056,85,1152,85.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 320" class="hidden dark:block">
+        <path fill="#1e293b" fill-opacity="1"
             d="M0,0L48,21.3C96,43,192,85,288,117.3C384,149,480,171,576,170.7C672,171,768,149,864,128C960,107,1056,85,1152,85.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
         </path>
     </svg>
     <!-- HERO SECTION END -->
 
     <!-- EDUCATION SECTION START -->
-    <section id="education" class="pt-32 pb-32 bg-gray-50">
+    <section id="education" class="pt-32 pb-32 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-12" data-aos="zoom-in">
-                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark">Education</h2>
+                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark dark:text-white transition-colors duration-300">Education</h2>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto; height: 35px;"
                         xml:space="preserve">
@@ -133,15 +143,15 @@
                         <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
                             style="stroke-width: 2;stroke-miterlimit: 10;"></line>
                     </svg>
-                    <p class="text-gray-500 leading-relaxed font-light text-lg mx-auto pb-2">History of education.</p>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-light text-lg mx-auto pb-2 transition-colors duration-300">History of education.</p>
                 </div>
             </div>
-            <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-gray-600 lg:px-16" data-aos="fade-down">
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-gray-600 dark:text-gray-400 lg:px-16 transition-colors duration-300" data-aos="fade-down">
                 <!-- left -->
                 <div class="flex flex-row-reverse md:contents">
-                    <div class="bg-white col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                        <h3 class="font-semibold text-base md:text-lg mb-1">Politeknik Harapan Bersama</h3>
-                        <h4 class="font-normal text-sm mb-1 text-gray-400">2017-2021</h4>
+                    <div class="bg-white dark:bg-slate-700 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md transition-colors duration-300">
+                        <h3 class="font-semibold text-base md:text-lg mb-1 dark:text-white">STIMIK Kharisma Karawang</h3>
+                        <h4 class="font-normal text-sm mb-1 text-gray-400">2016-2018</h4>
                         <p class="leading-tight text-justify text-base">
                             Bachelor of Applied
                             Science
@@ -163,9 +173,9 @@
                         </div>
                         <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary shadow"></div>
                     </div>
-                    <div class="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-                        <h3 class="font-semibold text-base md:text-lg mb-1">SMK Negeri 2 Tegal</h3>
-                        <h4 class="font-normal text-sm mb-1 text-gray-400">2014-2017</h4>
+                    <div class="bg-white dark:bg-slate-700 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md transition-colors duration-300">
+                        <h3 class="font-semibold text-base md:text-lg mb-1 dark:text-white">SMA Negeri 1 Karangnunggal, Tasikmalaya</h3>
+                        <h4 class="font-normal text-sm mb-1 text-gray-400">2006-2008</h4>
                         <p class="leading-tight text-justify text-base">
                             Computer and Network
                             Engineering
@@ -178,11 +188,11 @@
     <!-- EDUCATION SECTION END -->
 
     <!-- SKILL SECTION START -->
-    <section id="skills" class="pt-32 pb-32 ">
+    <section id="skills" class="pt-32 pb-32 dark:bg-slate-900 transition-colors duration-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-12" data-aos="zoom-in">
-                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark">Skills</h2>
+                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark dark:text-white transition-colors duration-300">Skills</h2>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;"
                         xml:space="preserve">
@@ -193,12 +203,12 @@
                         <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
                             style="stroke-width: 2;stroke-miterlimit: 10;"></line>
                     </svg>
-                    <p class="text-gray-500 leading-relaxed font-light text-lg mx-auto pb-2">Programming languages and
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-light text-lg mx-auto pb-2 transition-colors duration-300">Programming languages and
                         tools.
                     </p>
                 </div>
             </div>
-            <div class="grid w-full text-secondary place-content-center" data-aos="fade-down">
+            <div class="grid w-full text-secondary dark:text-gray-400 place-content-center transition-colors duration-300" data-aos="fade-down">
                 <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
                     {{-- CSS icon --}}
                     <div class="w-full justify-center">
@@ -455,11 +465,11 @@
     <!-- SKILL SECTION END -->
 
     <!-- PROJECT SECTION START -->
-    <section id="projects" class="pt-32 pb-32 bg-gray-50">
+    <section id="projects" class="pt-32 pb-32 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-12" data-aos="zoom-in">
-                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark">Projects</h2>
+                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark dark:text-white transition-colors duration-300">Projects</h2>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto; height: 35px;"
                         xml:space="preserve">
@@ -470,7 +480,7 @@
                         <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
                             style="stroke-width: 2;stroke-miterlimit: 10;"></line>
                     </svg>
-                    <p class="text-gray-500 leading-relaxed font-light text-lg mx-auto pb-2">Completed projects.</p>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-light text-lg mx-auto pb-2 transition-colors duration-300">Completed projects.</p>
                 </div>
             </div>
             <div class="lg:px-16">
@@ -478,7 +488,7 @@
                     @if (!empty($projects) && $projects->count())
                         @foreach ($projects->take(3) as $project)
                             <div class="w-full px-4 md:w-1/2 lg:w-1/3 ">
-                                <div class="bg-white rounded-xl border border-gray-100 overflow-hidden mb-10">
+                                <div class="bg-white dark:bg-slate-700 rounded-xl border border-gray-100 dark:border-slate-600 overflow-hidden mb-10 transition-colors duration-300">
                                     @if ($project->image)
                                         <div class="w-full">
                                             <img src="{{ asset('storage/' . $project->image) }}"
@@ -491,9 +501,9 @@
                                     @endif
                                     <div class="py-6 px-6">
                                         <h3> <a href="/projects/{{ $project->slug }}"
-                                                class="block text-lg tracking-normal mb-3 font-medium text-dark hover:text-primary hover:underline underline-offset-2 truncate">{{ $project->title }}</a>
+                                                class="block text-lg tracking-normal mb-3 font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:underline underline-offset-2 truncate transition-colors duration-300">{{ $project->title }}</a>
                                         </h3>
-                                        <p class="text-sm text-secondary mb-6 line-clamp-3">
+                                        <p class="text-sm text-secondary dark:text-gray-400 mb-6 line-clamp-3 transition-colors duration-300">
                                             {{ $project->excerpt }}
                                         </p>
                                         <div class="flow-root">
@@ -506,7 +516,7 @@
                                             </div>
                                             <div class="float-right">
                                                 <a href="/projects/{{ $project->slug }}"
-                                                    class="text-sm text-dark hover:text-primary inline-flex hover:scale-105">
+                                                    class="text-sm text-dark dark:text-gray-300 hover:text-primary dark:hover:text-primary inline-flex hover:scale-105 transition-colors duration-300">
                                                     Read more
                                                     <svg fill="none" class="h-4 w-4 m-auto ml-2 hover:text-primary "
                                                         stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
@@ -522,7 +532,7 @@
                             </div>
                         @endforeach
                     @else
-                        <p class="text-center text-dark">No projects found</p>
+                        <p class="text-center text-dark dark:text-white transition-colors duration-300">No projects found</p>
                     @endif
                 </div>
                 <div class="px-4 pt-0 pb-2" data-aos="zoom-in">
@@ -539,11 +549,11 @@
     <!-- PPROJECT SECTION END -->
 
     {{-- SERVICE SECTION START --}}
-    <section id="services" class="pt-32 pb-0">
+    <section id="services" class="pt-32 pb-0 dark:bg-slate-900 transition-colors duration-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-12" data-aos="zoom-in">
-                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark">Services</h2>
+                    <h2 class="text-2xl leading-normal mb-2 font-semibold text-dark dark:text-white transition-colors duration-300">Services</h2>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;"
                         xml:space="preserve">
@@ -554,14 +564,14 @@
                         <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary"
                             style="stroke-width: 2;stroke-miterlimit: 10;"></line>
                     </svg>
-                    <p class="text-gray-500 leading-relaxed font-light text-lg mx-auto pb-2">What are you looking for?</p>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed font-light text-lg mx-auto pb-2 transition-colors duration-300">What are you looking for?</p>
                 </div>
             </div>
             <div class="w-full px-4 mx-auto lg:px-40 ">
-                <div class="bg-gray-50 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
+                <div class="bg-gray-50 dark:bg-slate-800 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
                     data-aos="fade-down">
                     <div class="flex flex-wrap">
-                        <div class="w-full text-dark md:w-1/2">
+                        <div class="w-full text-dark dark:text-white md:w-1/2 transition-colors duration-300">
                             <svg fill="none" stroke="currentColor" class="h-6 w-6 mb-2 text-primary"
                                 stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true">
@@ -571,16 +581,16 @@
                             </svg>
                             <span class="text-base md:text-lg font-bold text-primary">Website Design</span>
                         </div>
-                        <div class="w-full text-secondary md:w-1/2">
+                        <div class="w-full text-secondary dark:text-gray-400 md:w-1/2 transition-colors duration-300">
                             <span class="text-sm md:text-base">Have a beautiful site design with affordable price and good
                                 quality.</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
+                <div class="bg-gray-50 dark:bg-slate-800 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
                     data-aos="fade-down">
                     <div class="flex flex-wrap">
-                        <div class="w-full text-dark md:w-1/2">
+                        <div class="w-full text-dark dark:text-white md:w-1/2 transition-colors duration-300">
                             <svg fill="none" stroke="currentColor" class="h-6 w-6 mb-2 text-primary"
                                 stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true">
@@ -590,16 +600,16 @@
                             </svg>
                             <span class="text-base md:text-lg font-bold text-primary">Mobile App Design</span>
                         </div>
-                        <div class="w-full text-secondary md:w-1/2">
+                        <div class="w-full text-secondary dark:text-gray-400 md:w-1/2 transition-colors duration-300">
                             <span class="text-sm md:text-base">Have a beautiful app design with affordable price and good
                                 quality.</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
+                <div class="bg-gray-50 dark:bg-slate-800 rounded-xl sm:p-8 p-4 mb-8 drop-shadow-sm transform transition duration-300 ease-in-out hover:-translate-y-2"
                     data-aos="fade-down">
                     <div class="flex flex-wrap">
-                        <div class="w-full text-dark md:w-1/2">
+                        <div class="w-full text-dark dark:text-white md:w-1/2 transition-colors duration-300">
                             <svg fill="none" stroke="currentColor" class="h-6 w-6 mb-2 text-primary"
                                 stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                 aria-hidden="true">
@@ -609,7 +619,7 @@
                             </svg>
                             <span class="text-base md:text-lg font-bold text-primary">Website Developer</span>
                         </div>
-                        <div class="w-full text-secondary md:w-1/2">
+                        <div class="w-full text-secondary dark:text-gray-400 md:w-1/2 transition-colors duration-300">
                             <span class="text-sm md:text-base">Build your dream site come true with affordable price and
                                 good
                                 quality.</span>

@@ -64,10 +64,10 @@
                         <a href="/#services"
                             class="px-2 md:px-3 hover:text-primary hover:underline hover:underline-offset-4">Services</a>
                     </div>
-                    <span class="order-2 mt-4 md:mt-0 md:mb-8 px-4 lg:px-44 md:px-30">&copy; 2023, <a
-                            href="https://linkedin.com/in/m-irfan-bakhtiar/"
-                            class="hover:text-primary hover:underline hover:underline-offset-4" target="_blank">Muhammad
-                            Irfan Bakhtiar</a>. All rights reserved.
+                    <span class="order-2 mt-4 md:mt-0 md:mb-8 px-4 lg:px-44 md:px-30">&copy; 2026, <a
+                            href="https://linkedin.com/in/"
+                            class="hover:text-primary hover:underline hover:underline-offset-4" target="_blank">
+                            Tantan Taryana</a>. All rights reserved.
                         <span class="block pt-4 text-xs md:text-sm text-gray-400">Coded in <a
                                 href="https://code.visualstudio.com/"
                                 class="text-secondary hover:text-primary hover:underline hover:underline-offset-4 font-medium"
